@@ -34,6 +34,18 @@ addons:
     - g++-4.8
     - gcc-4.8
 # script needed to test, because defaults don't work on osx
+
 script:
-  - npm install
-- npm run lint
+  - "node ./src/scripts/fetchGitActivity"
+  - "npm run build"
+
+  
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  keep-history: false
+  target_branch: master
+  on:
+    branch: source

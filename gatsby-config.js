@@ -27,7 +27,10 @@ module.exports = {
       },
     ],
     author: {
-      name: 'acolytec3',
+      name: 'Acolytec3',
+      email: '#',
+      telegram: '#',
+      twitter: '#',
       github: '#',
       rss: '#',
       vk: '#',
