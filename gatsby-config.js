@@ -1,7 +1,7 @@
 const lost = require('lost')
 const pxtorem = require('postcss-pxtorem')
 
-const url = 'https://lumen.netlify.com'
+const url = 'https://acolytec3.github.io/portfolio'
 
 module.exports = {
   siteMetadata: {
@@ -14,7 +14,7 @@ module.exports = {
     disqusShortname: '',
     menu: [
       {
-        label: 'Articles',
+        label: 'Projects',
         path: '/',
       },
       {
@@ -27,10 +27,7 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
+      name: 'acolytec3',
       github: '#',
       rss: '#',
       vk: '#',
@@ -122,11 +119,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' },
-    },
-    {
+   {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: ['roboto:400,400i,500,700'],
@@ -136,6 +129,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    `gatsby-transformer-json`,
     {
       resolve: 'gatsby-plugin-sass',
       options: {
