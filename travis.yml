@@ -20,6 +20,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   local_dir: public
   keep-history: false
-  target_branch: master
+  target_branch: gh-pages
   on:
-    branch: source
+    branch: master
